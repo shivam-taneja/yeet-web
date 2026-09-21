@@ -33,35 +33,37 @@ export default function PrivacyPage() {
           <section className="space-y-6">
             <div>
               <h2 className="font-display font-bold text-2xl mb-4">
-                1. Information We Collect
+                1. No Servers, No Tracking
               </h2>
               <p className="text-ink/80">
-                Yeet requires access to your X (Twitter) and Threads accounts to
-                function. We only request the minimum permissions necessary to
-                publish your posts across these platforms.
+                Yeet is a purely client-side Chrome extension. It runs entirely
+                locally in your browser. We do not have any servers, we do not
+                track your activity, and we do not collect, send, or store your
+                data anywhere.
               </p>
             </div>
 
             <div>
               <h2 className="font-display font-bold text-2xl mb-4">
-                2. How We Use Your Information
+                2. How It Works
               </h2>
               <p className="text-ink/80">
-                We strictly use your account permissions to sync your posts
-                between X and Threads. We do not read your timeline, we do not
-                store your private messages, and we do not sell your data to
-                third parties.
+                When you post on X or Threads, the extension simply takes your
+                post and automatically submits it to the other platform on your
+                behalf, locally from your own browser. You can turn it off at
+                any time directly from the extension menu.
               </p>
             </div>
 
             <div>
               <h2 className="font-display font-bold text-2xl mb-4">
-                3. Data Storage
+                3. Open Source & Transparent
               </h2>
               <p className="text-ink/80">
-                Your authentication tokens are stored securely. We do not
-                permanently store the content of your posts on our servers; they
-                are directly transmitted to the respective social media APIs.
+                We believe in complete transparency. Yeet is 100% open-source,
+                which means anyone can read the source code to verify exactly
+                how it works and confirm that your data never leaves your
+                machine.
               </p>
             </div>
 
