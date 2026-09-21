@@ -9,7 +9,7 @@ import { YeetProductPreview } from "@/components/product-preview/yeet-product-pr
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-cream text-ink font-body selection:bg-coral selection:text-cream overflow-x-hidden">
+    <div className="min-h-screen bg-cream text-ink font-body selection:bg-coral selection:text-cream">
       <Header />
       <Hero />
       <Demo />

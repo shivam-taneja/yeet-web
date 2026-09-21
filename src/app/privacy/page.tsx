@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-cream text-ink font-body selection:bg-coral selection:text-cream overflow-x-hidden">
+    <div className="min-h-screen flex flex-col bg-cream text-ink font-body selection:bg-coral selection:text-cream">
       <Header />
 
       <main className="flex-1 max-w-4xl mx-auto px-6 md:px-12 py-16 md:py-24 w-full">
