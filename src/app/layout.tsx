@@ -1,4 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "#202020",
+};
 import { Bricolage_Grotesque, Space_Grotesk } from "next/font/google";
 import { defaultMetadata, siteUrl } from "@/config/seo";
 import "./globals.css";

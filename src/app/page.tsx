@@ -1,10 +1,11 @@
 import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/sections/hero";
 import { Demo } from "@/components/sections/demo";
-import { YeetProductPreview } from "@/components/product-preview/yeet-product-preview";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { Cta } from "@/components/sections/cta";
-import { Footer } from "@/components/layout/footer";
+import { Faq } from "@/components/sections/faq";
+import { YeetProductPreview } from "@/components/product-preview/yeet-product-preview";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Demo />
       <YeetProductPreview />
       <HowItWorks />
+      <Faq />
       <Cta />
       <Footer />
     </div>
