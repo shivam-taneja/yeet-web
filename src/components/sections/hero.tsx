@@ -39,6 +39,8 @@ export function Hero() {
           <div className="mt-12 flex flex-wrap items-center gap-4">
             <Link
               href={siteConfig.links.getYeet}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-coral text-cream px-8 py-4 rounded-full font-bold text-lg border-2 border-ink shadow-[5px_5px_0_var(--color-ink)] hover:translate-y-0.5 hover:shadow-[3px_3px_0_var(--color-ink)] transition"
             >
               Yeet it now
