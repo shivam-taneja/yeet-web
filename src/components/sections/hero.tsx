@@ -10,7 +10,7 @@ export function Hero() {
           <span className="absolute -top-8 -left-8 text-6xl text-coral anim-yeet select-none max-md:hidden">
             ✦
           </span>
-          <h1 className="font-display font-extrabold leading-[0.88] tracking-[-0.03em] text-[clamp(3.2rem,10.5vw,9rem)]">
+          <h1 className="font-display font-extrabold leading-[0.88] tracking-[-0.03em] text-[clamp(2.5rem,6vw,5.5rem)]">
             Write once.
             <br />
             <span className="text-coral flex items-center gap-2">
@@ -59,7 +59,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="hidden lg:block relative z-10 shrink-0 transform lg:rotate-3 lg:hover:rotate-0 transition-transform duration-300">
+        <div className="hidden lg:block relative -top-12 z-10 shrink-0 transform lg:rotate-3 lg:hover:rotate-0 transition-transform duration-300">
           <QuickPopup />
         </div>
       </div>
