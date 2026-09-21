@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="444" viewBox="0 0 500 444" role="img" aria-labelledby="title desc">
+  <title id="title">Yeet logo - Y Only</title>
+  <desc id="desc">
+    Coral Y with a flying arrow and yellow motion accents, featuring a reconstructed black border.
+  </desc>
+  <defs>
+<!--Coral Y-->
+    <path id="coral-y" d="M4415 3852 c-94 -60 -226 -145 -295 -189 -69 -45 -190 -123 -270 -174 -596 -382 -577 -364 -773 -714 -52 -93 -105 -191 -118 -217 -13 -28 -30 -48 -39 -48 -9 0 -179 168 -378 374 -461 477 -494 500 -707 500 -130 0 -616 -84 -647 -112 -45 -39 -15 -99 115 -239 703 -754 1139 -1227 1153 -1255 25 -46 25 -151 0 -198 -10 -19 -65 -107 -121 -195 -441 -693 -480 -758 -480 -807 0 -54 27 -91 82 -109 58 -19 564 71 661 118 129 62 141 78 511 709 476 823 771 1304 1142 1904 412 664 409 660 409 697 0 37 -22 63 -53 63 -12 0 -99 -49 -192 -108z"/>
+<!--Yellow Accents-->
+    <path id="butter-1" d="M4035 3824 c-33 -7 -213 -41 -400 -74 -400 -72 -1460 -267 -1493 -275 -19 -5 -8 -13 60 -46 77 -38 97 -56 274 -235 180 -184 192 -194 228 -194 48 0 38 -6 496 275 217 133 512 313 655 400 143 87 262 160 264 161 7 6 -21 2 -84 -12z"/>
+    <path id="butter-2" d="M1329 2256 c-2 -2 -188 -43 -414 -91 -226 -47 -420 -93 -433 -101 -96 -63 -65 -205 42 -191 94 12 825 178 879 199 58 23 77 119 32 163 -22 23 -91 36 -106 21z"/>
+    <path id="butter-3" d="M1453 1611 c-214 -55 -350 -94 -362 -106 -48 -43 -47 -122 3 -159 27 -21 27 -21 379 68 194 48 366 95 384 103 62 29 81 132 30 168 -35 24 -73 18 -434 -74z"/>
+  </defs>
+<!--Reconstructed Black Border Layer-->
+  <g transform="translate(0 444) scale(.1 -.1)" fill="#171717" stroke="#171717" stroke-width="400" stroke-linejoin="round" stroke-linecap="round">
+    <use href="#coral-y"/>
+    <use href="#butter-1"/>
+    <use href="#butter-2"/>
+    <use href="#butter-3"/>
+  </g>
+<!--Top Color Layer-->
+  <g transform="translate(0 444) scale(.1 -.1)">
+    <use href="#coral-y" fill="#ff5d48"/>
+    <use href="#butter-1" fill="#ffd34e"/>
+    <use href="#butter-2" fill="#ffd34e"/>
+    <use href="#butter-3" fill="#ffd34e"/>
+  </g>
+</svg>
