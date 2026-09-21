@@ -46,7 +46,7 @@ export function YeetProductPreview() {
       id="product"
       className="border-y-2 border-ink bg-butter py-16 md:py-24"
     >
-      <div className="mx-auto max-w-360 px-6 md:px-12">
+      <div className="mx-auto max-w-[1440px] px-6 md:px-12">
         <div className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
             <p className="mb-3 text-sm font-bold uppercase tracking-widest text-coral">
