@@ -70,12 +70,8 @@ export function YeetProductPreview() {
               <span className="font-display text-lg font-bold">
                 Quick popup
               </span>
-              <span className="text-xs font-semibold text-ink/50">
-                360 × 520
-              </span>
             </div>
 
-            {/* The quick popup component is now extracted for reuse in the header */}
             <div className="flex justify-center">
               <QuickPopup active={active} onActiveChange={setActive} />
             </div>
@@ -84,9 +80,6 @@ export function YeetProductPreview() {
           <div className="min-w-0">
             <div className="mb-3 flex items-center justify-between px-1">
               <span className="font-display text-lg font-bold">Side panel</span>
-              <span className="text-xs font-semibold text-ink/50 max-[520px]:hidden">
-                Room for the details
-              </span>
             </div>
             <div className="min-w-0 overflow-hidden rounded-3xl border-2 border-ink bg-cream shadow-[8px_8px_0_var(--color-ink)]">
               <div className="flex items-center justify-between border-b-2 border-ink px-6 py-4">

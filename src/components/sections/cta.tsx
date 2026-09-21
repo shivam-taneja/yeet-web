@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { siteConfig } from "@/config/site";
 
 export function Cta() {
   return (
@@ -20,7 +21,7 @@ export function Cta() {
           Install Yeet and let your posts fly themselves.
         </p>
         <Link
-          href="#"
+          href={siteConfig.links.getYeet}
           className="inline-block bg-cream text-ink px-9 py-4 rounded-full font-bold text-lg border-2 border-ink shadow-[5px_5px_0_var(--color-ink)] hover:translate-y-0.5 hover:shadow-[3px_3px_0_var(--color-ink)] transition"
         >
           Get Yeet free

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { siteConfig } from "@/config/site";
 
 export function Footer() {
   return (
@@ -15,10 +16,16 @@ export function Footer() {
         />
         <p className="text-sm text-ink/50">© 2026 Yeet · posts, yeeted.</p>
         <div className="flex gap-6 text-sm font-medium">
-          <Link href="#" className="hover:text-coral transition-colors">
+          <Link
+            href={siteConfig.links.privacy}
+            className="hover:text-coral transition-colors"
+          >
             Privacy
           </Link>
-          <Link href="#" className="hover:text-coral transition-colors">
+          <Link
+            href={siteConfig.links.contact}
+            className="hover:text-coral transition-colors"
+          >
             Contact
           </Link>
         </div>
