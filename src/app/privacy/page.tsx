@@ -76,6 +76,8 @@ export default function PrivacyPage() {
                 please contact us at{" "}
                 <a
                   href="https://www.shivamtaneja.com/contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-coral hover:underline font-medium"
                 >
                   shivamtaneja.com/contact

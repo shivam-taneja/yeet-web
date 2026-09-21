@@ -18,12 +18,16 @@ export function Footer() {
         <div className="flex gap-6 text-sm font-medium">
           <Link
             href={siteConfig.links.privacy}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-coral transition-colors"
           >
             Privacy
           </Link>
           <Link
             href={siteConfig.links.contact}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-coral transition-colors"
           >
             Contact
