@@ -37,7 +37,7 @@ export function QuickPopup({
   };
 
   return (
-    <div className="w-[360px] overflow-hidden rounded-3xl border-2 border-ink bg-cream shadow-[8px_8px_0_var(--color-ink)] text-ink">
+    <div className="w-90 overflow-hidden rounded-3xl border-2 border-ink bg-cream shadow-[8px_8px_0_var(--color-ink)] text-ink">
       <div className="flex items-center justify-between border-b-2 border-ink px-5 py-4">
         <Image
           src="/yeet-logo.png"

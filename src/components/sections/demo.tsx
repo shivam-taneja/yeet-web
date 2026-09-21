@@ -1,6 +1,6 @@
 export function Demo() {
   return (
-    <section className="max-w-[1440px] mx-auto px-6 md:px-12 py-14">
+    <section className="max-w-340 mx-auto px-6 md:px-12 py-14">
       <div className="rounded-[2rem] bg-grape border-2 border-ink p-8 md:p-14 text-cream shadow-[10px_10px_0_var(--color-ink)]">
         <div className="flex items-center gap-3 mb-8">
           <span className="text-2xl select-none">✳</span>

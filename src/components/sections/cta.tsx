@@ -5,7 +5,7 @@ export function Cta() {
   return (
     <section
       id="get"
-      className="max-w-[1440px] mx-auto px-6 md:px-12 pb-24 scroll-mt-8"
+      className="max-w-340 mx-auto px-6 md:px-12 pb-24 scroll-mt-8"
     >
       <div className="relative rounded-[2rem] bg-coral border-2 border-ink p-10 md:p-16 text-cream text-center shadow-[10px_10px_0_var(--color-ink)] overflow-hidden">
         <span className="absolute top-6 left-8 text-5xl anim-yeet select-none">

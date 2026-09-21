@@ -4,7 +4,7 @@ import { QuickPopup } from "@/components/product-preview/quick-popup";
 
 export function Hero() {
   return (
-    <section className="max-w-[1440px] mx-auto px-6 md:px-12 pt-16 md:pt-28 pb-16">
+    <section className="max-w-340 mx-auto px-6 md:px-12 pt-16 md:pt-28 pb-16">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
         <div className="max-w-4xl relative">
           <span className="absolute -top-8 -left-8 text-6xl text-coral anim-yeet select-none max-md:hidden">

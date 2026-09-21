@@ -2,7 +2,7 @@ export function HowItWorks() {
   return (
     <section
       id="how"
-      className="max-w-[1440px] mx-auto px-6 md:px-12 py-12 scroll-mt-8"
+      className="max-w-340 mx-auto px-6 md:px-12 py-12 scroll-mt-8"
     >
       <h2 className="font-display font-extrabold text-3xl md:text-5xl tracking-tight mb-10">
         Three things it does.

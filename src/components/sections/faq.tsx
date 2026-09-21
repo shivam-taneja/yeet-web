@@ -40,7 +40,7 @@ export function Faq() {
   };
 
   return (
-    <section className="max-w-[1440px] mx-auto px-6 md:px-12 py-16 md:py-24">
+    <section className="max-w-340 mx-auto px-6 md:px-12 py-16 md:py-24">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

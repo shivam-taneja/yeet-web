@@ -24,7 +24,7 @@ export function Header() {
           : "bg-transparent border-b-2 border-transparent py-7"
       }`}
     >
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex items-center justify-between">
+      <div className="max-w-340 mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/">
           <Image
             src="/yeet-logo.png"
