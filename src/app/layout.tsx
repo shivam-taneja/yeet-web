@@ -25,6 +25,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${bricolage.variable} ${spaceGrotesk.variable} scroll-smooth`}
+      data-scroll-behavior="smooth"
     >
       <body className="antialiased">{children}</body>
     </html>
