@@ -4,15 +4,17 @@ import { siteConfig } from "@/config/site";
 
 export function Header() {
   return (
-    <header className="max-w-360 mx-auto px-6 md:px-12 pt-7 flex items-center justify-between">
-      <Image
-        src="/yeet-logo.png"
-        alt="Yeet"
-        width={956}
-        height={444}
-        className="h-12 w-auto object-contain"
-        priority
-      />
+    <header className="w-full max-w-360 mx-auto px-6 md:px-12 pt-7 flex items-center justify-between shrink-0">
+      <Link href="/">
+        <Image
+          src="/yeet-logo.png"
+          alt="Yeet"
+          width={956}
+          height={444}
+          className="h-12 w-auto object-contain"
+          priority
+        />
+      </Link>
       <nav className="hidden md:flex items-center gap-8 text-[15px] font-medium">
         <Link
           href={siteConfig.links.howItWorks}

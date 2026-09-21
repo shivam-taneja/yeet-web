@@ -1,10 +1,10 @@
 export const siteConfig = {
   links: {
-    getYeet: "#get",
+    getYeet: "/#get",
 
-    howItWorks: "#how",
+    howItWorks: "/#how",
 
-    privacy: "#",
-    contact: "#",
+    privacy: "/#",
+    contact: "/#",
   },
 };
