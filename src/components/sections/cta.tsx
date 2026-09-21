@@ -22,6 +22,8 @@ export function Cta() {
         </p>
         <Link
           href={siteConfig.links.getYeet}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block bg-cream text-ink px-9 py-4 rounded-full font-bold text-lg border-2 border-ink shadow-[5px_5px_0_var(--color-ink)] hover:translate-y-0.5 hover:shadow-[3px_3px_0_var(--color-ink)] transition"
         >
           Get Yeet free

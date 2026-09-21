@@ -1,6 +1,6 @@
 export const siteConfig = {
   links: {
-    getYeet: "/#get",
+    getYeet: "https://github.com",
 
     howItWorks: "/#how",
 

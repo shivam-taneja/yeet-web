@@ -25,6 +25,8 @@ export function Header() {
       </nav>
       <Link
         href={siteConfig.links.getYeet}
+        target="_blank"
+        rel="noopener noreferrer"
         className="bg-ink text-cream px-5 py-2.5 rounded-full font-semibold text-sm border-2 border-ink shadow-[4px_4px_0_var(--color-coral)] hover:translate-y-0.5 hover:shadow-[2px_2px_0_var(--color-coral)] transition"
       >
         Get Yeet free

@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bricolage.variable} ${spaceGrotesk.variable}`}
+      className={`${bricolage.variable} ${spaceGrotesk.variable} scroll-smooth`}
     >
       <body className="antialiased">{children}</body>
     </html>
