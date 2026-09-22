@@ -56,7 +56,8 @@ export default function RootLayout({
       </head>
       <body className="antialiased overflow-x-hidden">
         {children}
-        <Analytics scriptSrc="/_proxy/va/script.js" endpoint="/_proxy/va" />
+
+        <Analytics />
       </body>
     </html>
   );
