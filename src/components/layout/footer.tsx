@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
+import { Github } from "@/components/icons";
 
 export function Footer() {
   return (
@@ -15,7 +16,7 @@ export function Footer() {
           className="h-9 w-auto object-contain"
         />
         <p className="text-sm text-ink/50">© 2026 Yeet · posts, yeeted.</p>
-        <div className="flex gap-6 text-sm font-medium">
+        <div className="flex gap-6 items-center text-sm font-medium">
           <Link
             href={siteConfig.links.privacy}
             className="hover:text-coral transition-colors"
@@ -29,6 +30,15 @@ export function Footer() {
             className="hover:text-coral transition-colors"
           >
             Contact
+          </Link>
+          <Link
+            href={siteConfig.links.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-coral transition-colors"
+            title="View on GitHub"
+          >
+            <Github className="w-4 h-4" />
           </Link>
         </div>
       </div>

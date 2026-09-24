@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { QuickPopup } from "@/components/product-preview/quick-popup";
+import { Github } from "@/components/icons";
 
 export function Hero() {
   return (
@@ -50,6 +51,15 @@ export function Hero() {
               className="bg-cream text-ink px-8 py-4 rounded-full font-bold text-lg border-2 border-ink hover:bg-ink/5 transition"
             >
               See how
+            </Link>
+            <Link
+              href={siteConfig.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-cream text-ink p-4 rounded-full font-bold border-2 border-ink hover:bg-ink/5 transition flex items-center justify-center"
+              title="View on GitHub"
+            >
+              <Github className="w-6 h-6" />
             </Link>
           </div>
 

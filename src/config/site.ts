@@ -1,6 +1,7 @@
 export const siteConfig = {
   links: {
-    getYeet: "https://github.com/shivam-taneja/yeet",
+    getYeet:
+      "https://chromewebstore.google.com/detail/knbfidiiikhjebpijhafdikkjhbgbefe?utm_source=item-share-cb",
     github: "https://github.com/shivam-taneja/yeet",
 
     howItWorks: "/#how",

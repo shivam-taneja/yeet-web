@@ -66,21 +66,12 @@ export function YeetProductPreview() {
 
         <div className="grid min-w-0 items-start gap-10 lg:grid-cols-[minmax(320px,420px)_minmax(0,1fr)]">
           <div className="min-w-0">
-            <div className="mb-3 flex items-center justify-between px-1">
-              <span className="font-display text-lg font-bold">
-                Quick popup
-              </span>
-            </div>
-
             <div className="flex justify-center">
               <QuickPopup active={active} onActiveChange={setActive} />
             </div>
           </div>
 
           <div className="min-w-0">
-            <div className="mb-3 flex items-center justify-between px-1">
-              <span className="font-display text-lg font-bold">Side panel</span>
-            </div>
             <div className="min-w-0 overflow-hidden rounded-3xl border-2 border-ink bg-cream shadow-[8px_8px_0_var(--color-ink)]">
               <div className="flex items-center justify-between border-b-2 border-ink px-6 py-4">
                 <Image

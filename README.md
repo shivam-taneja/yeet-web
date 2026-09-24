@@ -4,6 +4,8 @@ The Next.js marketing website for [yeet](https://github.com/shivam-taneja/yeet) 
 
 Live at [yeet.shivamtaneja.com](https://yeet.shivamtaneja.com)
 
+**Install the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/knbfidiiikhjebpijhafdikkjhbgbefe?utm_source=item-share-cb).**
+
 ## Demo
 
 https://github.com/user-attachments/assets/1b7b4be9-996c-411b-a182-0f14d98a52e6

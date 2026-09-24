@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
+import { Github } from "@/components/icons";
 
 export function Cta() {
   return (
@@ -20,14 +21,25 @@ export function Cta() {
         <p className="text-lg text-cream/85 mb-8">
           Install Yeet and let your posts fly themselves.
         </p>
-        <Link
-          href={siteConfig.links.getYeet}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-cream text-ink px-9 py-4 rounded-full font-bold text-lg border-2 border-ink shadow-[5px_5px_0_var(--color-ink)] hover:translate-y-0.5 hover:shadow-[3px_3px_0_var(--color-ink)] transition"
-        >
-          Get Yeet free
-        </Link>
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <Link
+            href={siteConfig.links.getYeet}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-cream text-ink px-9 py-4 rounded-full font-bold text-lg border-2 border-ink shadow-[5px_5px_0_var(--color-ink)] hover:translate-y-0.5 hover:shadow-[3px_3px_0_var(--color-ink)] transition"
+          >
+            Get Yeet free
+          </Link>
+          <Link
+            href={siteConfig.links.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-transparent text-cream p-4 rounded-full font-bold border-2 border-cream hover:bg-cream/10 transition items-center justify-center"
+            title="View on GitHub"
+          >
+            <Github className="w-6 h-6" />
+          </Link>
+        </div>
       </div>
     </section>
   );
