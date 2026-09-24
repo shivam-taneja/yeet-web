@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const viewport: Viewport = {
   themeColor: "#202020",
@@ -58,6 +59,7 @@ export default function RootLayout({
         {children}
 
         <Analytics />
+        <GoogleAnalytics gaId="G-VCC4KNCCQ5" />
       </body>
     </html>
   );
