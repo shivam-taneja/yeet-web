@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { BackToTop } from "@/components/layout/back-to-top";
 import { siteUrl } from "@/config/seo";
 
 export const metadata = {
@@ -171,6 +172,7 @@ export default function PrivacyPage() {
       </main>
 
       <Footer />
+      <BackToTop />
     </div>
   );
 }

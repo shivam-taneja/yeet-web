@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { BackToTop } from "@/components/layout/back-to-top";
 import { Hero } from "@/components/sections/hero";
 import { Demo } from "@/components/sections/demo";
 import { HowItWorks } from "@/components/sections/how-it-works";
@@ -18,6 +19,7 @@ export default function Home() {
       <Faq />
       <Cta />
       <Footer />
+      <BackToTop />
     </div>
   );
 }
