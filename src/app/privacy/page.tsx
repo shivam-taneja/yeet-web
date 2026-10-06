@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           </h1>
 
           <p className="text-ink/80 text-lg mb-8 font-medium">
-            Last updated: September 24, 2026
+            Last updated: October 6, 2026
           </p>
 
           <section className="space-y-6">
@@ -34,10 +34,11 @@ export default function PrivacyPage() {
               </h2>
               <p className="text-ink/80">
                 Yeet does not have an account system and does not sell data.
-                Draft text, images, post URLs, and login cookies stay in your
-                browser. The only network request Yeet makes on its own is a
-                public JSON file of CSS selectors on GitHub, so the extension
-                can keep working when X or Threads change their UI.
+                Draft text, post URLs, and login cookies stay in your browser.
+                Cross-posting is text-only today — media is not copied yet. The
+                only network request Yeet makes on its own is a public JSON file
+                of CSS selectors on GitHub, so the extension can keep working
+                when X or Threads change their UI.
               </p>
             </div>
 
@@ -46,10 +47,14 @@ export default function PrivacyPage() {
                 2. What Yeet reads
               </h2>
               <p className="text-ink/80">
-                When you use Yeet, the extension reads the text (and, when
-                enabled, images) in the X or Threads compose box so it can open
-                the other site with that draft. That content is not uploaded to
-                our servers.
+                When you use Yeet, the extension reads the text in the X or
+                Threads compose box so it can open the other site and inject
+                that draft. That content is not uploaded to our servers.
+              </p>
+              <p className="text-ink/80 mt-4">
+                Image, video, and GIF preference toggles exist in Settings but
+                are locked until media support ships. Yeet does not read or
+                store attached media today.
               </p>
               <p className="text-ink/80 mt-4">
                 The popup may check whether you are signed in by looking for
@@ -73,23 +78,47 @@ export default function PrivacyPage() {
                   <code>isActive</code> — whether the extension is turned on
                 </li>
                 <li>
-                  <code>copyImages</code> — whether attached images should be
-                  copied to the other app
+                  <code>copyImages</code>, <code>copyVideos</code>,{" "}
+                  <code>copyGifs</code> — media preference flags (unused until
+                  media support ships)
                 </li>
                 <li>
-                  <code>lastSavedAt</code> — a local timestamp
+                  <code>xContexts</code> / <code>threadsContexts</code> — which
+                  composer types (new post, reply, quote, etc.) are allowed to
+                  yeet in each direction
                 </li>
                 <li>
-                  <code>lastYeet</code> — the last draft you yeeted, including
-                  text, any images stored as base64, and when available the URL
-                  of the post that was just published. Base64 images can be
-                  large, which is why Yeet requests unlimited local storage.
+                  <code>lastSavedAt</code> — a local timestamp for settings
+                  changes
                 </li>
-                <li>cached CSS selectors for X and Threads</li>
+                <li>
+                  <code>pendingYeetText</code> — temporary plain text waiting to
+                  be injected on the destination site, then cleared after a
+                  successful post
+                </li>
+                <li>
+                  <code>lastYeet</code> — the last draft you yeeted: text,
+                  timestamp, source platform, and when available the destination
+                  post URL / id for the popup link
+                </li>
+                <li>
+                  <code>yeetProgress</code> — local progress status shown in the
+                  popup (idle / yeeting / done / error)
+                </li>
+                <li>
+                  <code>selectors</code> — cached CSS selectors / feature flags
+                  fetched from GitHub
+                </li>
+                <li>
+                  <code>xAccountPremium</code> — a local cache of whether your X
+                  account looks Premium, used only for character-limit checks
+                </li>
               </ul>
               <p className="text-ink/80 mt-4">
-                This stays on your device. You can clear it by removing the
-                extension.
+                Draft text is stashed in extension storage rather than put in
+                the intent URL, so links and Open Graph previews behave
+                normally. Nothing here leaves your device. You can clear it by
+                removing the extension or using Reset in Settings.
               </p>
             </div>
 
@@ -100,20 +129,21 @@ export default function PrivacyPage() {
               <p className="text-ink/80">
                 Yeet may fetch{" "}
                 <code>
-                  https://raw.githubusercontent.com/shivam-taneja/yeet/main/public/selectors.json
+                  https://raw.githubusercontent.com/shivam-taneja/yeet/main/lib/selectors.json
                 </code>
-                . That file contains selector strings only. It is not executable
-                code. GitHub may see a normal request from your browser when
-                that file is downloaded.
+                . That file contains selector strings and feature flags only. It
+                is not executable code. GitHub may see a normal request from
+                your browser when that file is downloaded.
               </p>
               <p className="text-ink/80 mt-4">
                 Opening X or Threads compose pages happens in your browser, as
                 you. Yeet does not proxy those posts through our servers.
               </p>
               <p className="text-ink/80 mt-4">
-                After a yeet, the extension may read the local browser response
-                from X or Threads to pick up the new post URL so it can show
-                that link in the popup. That response is not sent to us.
+                After a yeet, the extension may briefly watch the local browser
+                response from X (<code>CreateTweet</code>) or Threads
+                (configure-text APIs) to pick up the new post URL / id so it can
+                show that link in the popup. That response is not sent to us.
               </p>
             </div>
 
