@@ -8,7 +8,7 @@ Live at [yeet.shivamtaneja.com](https://yeet.shivamtaneja.com)
 
 ## Demo
 
-https://github.com/user-attachments/assets/1b7b4be9-996c-411b-a182-0f14d98a52e6
+https://github.com/user-attachments/assets/5899ab1b-dd3e-4e3a-88cd-f1a91307792f
 
 ## Tech Stack
 
