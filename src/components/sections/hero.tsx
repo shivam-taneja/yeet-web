@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { QuickPopup } from "@/components/product-preview/quick-popup";
+import { StoreAvailability } from "@/components/sections/store-availability";
+import { GetYeetLink } from "@/components/get-yeet-link";
 import { Github } from "@/components/icons";
 
 export function Hero() {
@@ -38,14 +40,9 @@ export function Hero() {
           </p>
 
           <div className="mt-12 flex flex-wrap items-center gap-4">
-            <Link
-              href={siteConfig.links.getYeet}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-coral text-cream px-8 py-4 rounded-full font-bold text-lg border-2 border-ink shadow-[5px_5px_0_var(--color-ink)] hover:translate-y-0.5 hover:shadow-[3px_3px_0_var(--color-ink)] transition"
-            >
+            <GetYeetLink className="bg-coral text-cream px-8 py-4 rounded-full font-bold text-lg border-2 border-ink shadow-[5px_5px_0_var(--color-ink)] hover:translate-y-0.5 hover:shadow-[3px_3px_0_var(--color-ink)] transition">
               Yeet it now
-            </Link>
+            </GetYeetLink>
             <Link
               href={siteConfig.links.howItWorks}
               className="bg-cream text-ink px-8 py-4 rounded-full font-bold text-lg border-2 border-ink hover:bg-ink/5 transition"
@@ -68,6 +65,10 @@ export function Hero() {
             <span>✓ Text + images</span>
             <span>✓ Two-way (X ↔ Threads)</span>
             <span>✓ Posts by itself</span>
+          </div>
+
+          <div className="mt-5">
+            <StoreAvailability />
           </div>
         </div>
 
