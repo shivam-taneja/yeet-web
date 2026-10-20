@@ -17,9 +17,12 @@ export function Demo() {
               <span className="font-semibold text-sm">X</span>
             </div>
             <p className="text-[15px] leading-relaxed">
-              Shipped the new Yeet flow today. Posts hop over on their own now.
-              No more double-typing 🙌
+              Shipped image yeets today. Write once on X — text and photos land
+              on Threads by themselves.
             </p>
+            <div className="mt-4 h-24 rounded-2xl border-2 border-ink/15 bg-mint/40 grid place-items-center text-xs font-bold text-ink/45">
+              photo attached
+            </div>
             <div className="mt-4 flex gap-5 text-xs text-ink/50">
               <span>♥ 214</span>
               <span>💬 32</span>
@@ -42,9 +45,12 @@ export function Demo() {
               <span className="font-semibold text-sm">Threads</span>
             </div>
             <p className="text-[15px] leading-relaxed">
-              Shipped the new Yeet flow today. Posts hop over on their own now.
-              No more double-typing 🙌
+              Shipped image yeets today. Write once on X — text and photos land
+              on Threads by themselves.
             </p>
+            <div className="mt-4 h-24 rounded-2xl border-2 border-ink/15 bg-butter/50 grid place-items-center text-xs font-bold text-ink/45">
+              same photo
+            </div>
             <div className="mt-4 flex gap-5 text-xs text-ink/50">
               <span>♥ 118</span>
               <span>💬 14</span>

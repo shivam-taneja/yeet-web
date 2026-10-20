@@ -4,7 +4,7 @@ import { BackToTop } from "@/components/layout/back-to-top";
 import { siteUrl } from "@/config/seo";
 
 export const metadata = {
-  title: "Privacy Policy | Yeet",
+  title: "Privacy Policy",
   description:
     "Privacy policy for the Yeet browser extension. What data stays on your device, and what does not.",
   alternates: {
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           </h1>
 
           <p className="text-ink/80 text-lg mb-8 font-medium">
-            Last updated: October 6, 2026
+            Last updated: October 20, 2026
           </p>
 
           <section className="space-y-6">
@@ -34,11 +34,10 @@ export default function PrivacyPage() {
               </h2>
               <p className="text-ink/80">
                 Yeet does not have an account system and does not sell data.
-                Draft text, post URLs, and login cookies stay in your browser.
-                Cross-posting is text-only today — media is not copied yet. The
-                only network request Yeet makes on its own is a public JSON file
-                of CSS selectors on GitHub, so the extension can keep working
-                when X or Threads change their UI.
+                Draft text, images (when Copy Images is on), post URLs, and
+                login cookies stay in your browser. Cross-posting runs locally —
+                Yeet does not proxy posts through our servers. There is no Yeet
+                backend that receives your content.
               </p>
             </div>
 
@@ -49,12 +48,16 @@ export default function PrivacyPage() {
               <p className="text-ink/80">
                 When you use Yeet, the extension reads the text in the X or
                 Threads compose box so it can open the other site and inject
-                that draft. That content is not uploaded to our servers.
+                that draft. If Copy Images is enabled, it also reads image files
+                attached in the composer shell (not feed or timeline media) so
+                it can attach them on the destination. That content is not
+                uploaded to our servers.
               </p>
               <p className="text-ink/80 mt-4">
-                Image, video, and GIF preference toggles exist in Settings but
-                are locked until media support ships. Yeet does not read or
-                store attached media today.
+                Copy Videos / Copy GIFs toggles are visible in Settings but
+                locked until that support ships. Yeet does not copy videos or
+                GIFs today; if one is attached, it skips the cross-post with an
+                alert and your source post still goes through.
               </p>
               <p className="text-ink/80 mt-4">
                 The popup may check whether you are signed in by looking for
@@ -79,8 +82,8 @@ export default function PrivacyPage() {
                 </li>
                 <li>
                   <code>copyImages</code>, <code>copyVideos</code>,{" "}
-                  <code>copyGifs</code> — media preference flags (unused until
-                  media support ships)
+                  <code>copyGifs</code> — media preference flags (
+                  <code>copyImages</code> is active; videos/GIFs remain locked)
                 </li>
                 <li>
                   <code>xContexts</code> / <code>threadsContexts</code> — which
@@ -97,6 +100,11 @@ export default function PrivacyPage() {
                   successful post
                 </li>
                 <li>
+                  <code>pendingYeetImages</code> — temporary image payloads for
+                  the destination attach step, then cleared after a successful
+                  post (or skip)
+                </li>
+                <li>
                   <code>lastYeet</code> — the last draft you yeeted: text,
                   timestamp, source platform, and when available the destination
                   post URL / id for the popup link
@@ -106,19 +114,15 @@ export default function PrivacyPage() {
                   popup (idle / yeeting / done / error)
                 </li>
                 <li>
-                  <code>selectors</code> — cached CSS selectors / feature flags
-                  fetched from GitHub
-                </li>
-                <li>
                   <code>xAccountPremium</code> — a local cache of whether your X
                   account looks Premium, used only for character-limit checks
                 </li>
               </ul>
               <p className="text-ink/80 mt-4">
-                Draft text is stashed in extension storage rather than put in
-                the intent URL, so links and Open Graph previews behave
-                normally. Nothing here leaves your device. You can clear it by
-                removing the extension or using Reset in Settings.
+                Draft text and images are stashed in extension storage rather
+                than put in the intent URL, so links and Open Graph previews
+                behave normally. Nothing here leaves your device. You can clear
+                it by removing the extension or using Reset in Settings.
               </p>
             </div>
 
@@ -127,13 +131,8 @@ export default function PrivacyPage() {
                 4. Network requests
               </h2>
               <p className="text-ink/80">
-                Yeet may fetch{" "}
-                <code>
-                  https://raw.githubusercontent.com/shivam-taneja/yeet/main/lib/selectors.json
-                </code>
-                . That file contains selector strings and feature flags only. It
-                is not executable code. GitHub may see a normal request from
-                your browser when that file is downloaded.
+                Yeet does not fetch remote configuration or selector files.
+                Platform UI selectors ship bundled with the extension build.
               </p>
               <p className="text-ink/80 mt-4">
                 Opening X or Threads compose pages happens in your browser, as
@@ -175,6 +174,13 @@ export default function PrivacyPage() {
                   className="text-coral hover:underline font-medium"
                 >
                   github.com/shivam-taneja/yeet
+                </a>
+                . Product site:{" "}
+                <a
+                  href={siteUrl}
+                  className="text-coral hover:underline font-medium"
+                >
+                  yeet.shivamtaneja.com
                 </a>
                 .
               </p>

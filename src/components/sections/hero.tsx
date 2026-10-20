@@ -32,9 +32,9 @@ export function Hero() {
             everywhere.
           </h1>
           <p className="mt-8 text-lg md:text-2xl text-ink/75 max-w-2xl leading-relaxed font-medium">
-            Yeet carries your posts between X and Threads automatically. Type it
-            in one place, and it lands in the other — same moment, no
-            copy-paste.
+            Auto cross-post between X and Threads. Write on X, it posts to
+            Threads by itself — write on Threads, it lands on X. Text and
+            images. Free and open source.
           </p>
 
           <div className="mt-12 flex flex-wrap items-center gap-4">
@@ -64,10 +64,10 @@ export function Hero() {
           </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-ink/60">
-            <span>✓ Free to install</span>
-            <span>✓ Two-way sync</span>
-            <span>✓ No re-typing</span>
-            <span>✓ Works on the web</span>
+            <span>✓ Free & open source</span>
+            <span>✓ Text + images</span>
+            <span>✓ Two-way (X ↔ Threads)</span>
+            <span>✓ Posts by itself</span>
           </div>
         </div>
 

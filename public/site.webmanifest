@@ -1,7 +1,7 @@
 {
   "name": "Yeet",
   "short_name": "Yeet",
-  "description": "Write once. Land everywhere. Cross-post automatically between X and Threads.",
+  "description": "Auto cross-post between X and Threads. Text and images. Free and open source.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FCF9EE",

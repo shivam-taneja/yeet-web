@@ -1,6 +1,6 @@
 # yeet-web
 
-The Next.js marketing website for [yeet](https://github.com/shivam-taneja/yeet) — a browser extension for seamless, bidirectional cross-posting between X (Twitter) and Threads.
+The Next.js marketing website for [yeet](https://github.com/shivam-taneja/yeet) — a free, open-source Chrome extension that auto cross-posts **text and images** between X (Twitter) and Threads.
 
 Live at [yeet.shivamtaneja.com](https://yeet.shivamtaneja.com)
 
@@ -35,6 +35,7 @@ yeet-web/
 │   │   ├── sections/         # Page sections
 │   │   │   ├── hero.tsx      # Hero section
 │   │   │   ├── demo.tsx      # Product demo section
+│   │   │   ├── screenshots.tsx
 │   │   │   ├── how-it-works.tsx
 │   │   │   ├── faq.tsx       # FAQ accordion
 │   │   │   └── cta.tsx       # Call-to-action section

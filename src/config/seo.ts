@@ -1,24 +1,31 @@
 import type { Metadata } from "next";
 
-export const siteUrl = "http://yeet.shivamtaneja.com";
+export const siteUrl = "https://yeet.shivamtaneja.com";
+
+const title = "Yeet — Auto cross-post between X and Threads";
+const description =
+  "Write on X, it posts to Threads by itself. Write on Threads, it lands on X. Images included. Free and open source.";
 
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Yeet — Write once. Land everywhere.",
+    default: title,
     template: "%s | Yeet",
   },
-  description:
-    "Yeet carries your posts between X and Threads automatically. Post in one place, it lands in the other. No copy-paste, no re-typing.",
+  description,
   keywords: [
     "Yeet",
+    "cross-post X and Threads",
+    "post to X and Threads at once",
+    "auto cross-post",
     "Twitter",
     "X",
     "Threads",
-    "Cross-posting",
-    "Social Media Automation",
-    "Chrome Extension",
-    "Sync posts",
+    "cross-posting",
+    "cross post images",
+    "Chrome extension",
+    "social media automation",
+    "free open source",
   ],
   authors: [
     {
@@ -27,28 +34,29 @@ export const defaultMetadata: Metadata = {
     },
   ],
   creator: "Shivam Taneja",
+  alternates: {
+    canonical: siteUrl,
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Yeet — Write once. Land everywhere.",
-    description:
-      "Post on X, it lands on Threads. Post on Threads, it lands on X. Automatically.",
+    title,
+    description,
     siteName: "Yeet",
     images: [
       {
         url: "/yeet-og.png",
         width: 1200,
         height: 630,
-        alt: "Yeet - Write once, Land everywhere",
+        alt: "Yeet auto cross-posting from X to Threads with text and images",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yeet — Write once. Land everywhere.",
-    description:
-      "Post on X, it lands on Threads. Post on Threads, it lands on X. Automatically.",
+    title,
+    description,
     creator: "@codesbyshivam",
     images: ["/yeet-og.png"],
   },

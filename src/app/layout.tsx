@@ -39,8 +39,12 @@ export default function RootLayout({
       priceCurrency: "USD",
     },
     description:
-      "Yeet carries your posts between X and Threads automatically. Post in one place, it lands in the other.",
+      "Write on X, it posts to Threads by itself. Write on Threads, it lands on X. Images included. Free and open source.",
     url: siteUrl,
+    downloadUrl:
+      "https://chromewebstore.google.com/detail/knbfidiiikhjebpijhafdikkjhbgbefe",
+    softwareVersion: "1.3.0",
+    isAccessibleForFree: true,
   };
 
   return (

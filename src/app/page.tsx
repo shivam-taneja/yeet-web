@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/footer";
 import { BackToTop } from "@/components/layout/back-to-top";
 import { Hero } from "@/components/sections/hero";
 import { Demo } from "@/components/sections/demo";
+import { Screenshots } from "@/components/sections/screenshots";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { Cta } from "@/components/sections/cta";
 import { Faq } from "@/components/sections/faq";
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Demo />
+      <Screenshots />
       <YeetProductPreview />
       <HowItWorks />
       <Faq />

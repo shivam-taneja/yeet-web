@@ -18,6 +18,14 @@ export function Footer() {
         <p className="text-sm text-ink/50">© 2026 Yeet · posts, yeeted.</p>
         <div className="flex gap-6 items-center text-sm font-medium">
           <Link
+            href={siteConfig.links.getYeet}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-coral transition-colors"
+          >
+            Chrome Web Store
+          </Link>
+          <Link
             href={siteConfig.links.privacy}
             className="hover:text-coral transition-colors"
           >

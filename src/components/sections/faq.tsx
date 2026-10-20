@@ -5,23 +5,34 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
+    question: "Can I post to X and Threads at the same time?",
+    answer:
+      "Yes. Yeet is built for that. Post on X and it auto cross-posts to Threads; post on Threads and it lands on X. Both directions work from the normal Post click or Cmd/Ctrl + Enter.",
+  },
+  {
+    question: "Does it support images?",
+    answer:
+      "Yes. Enable Copy Images in Settings and Yeet carries photos both ways (X ↔ Threads), up to four images on X. Videos and GIFs are not copied yet — if one is attached, Yeet skips the cross-post with an alert and your source post still goes through.",
+  },
+  {
+    question: "Is it free?",
+    answer:
+      "Yes. Yeet is completely free and open source under the MIT License. No account, no subscription, no paywall.",
+  },
+  {
     question: "How does Yeet work?",
     answer:
-      "Yeet is a client-side Chrome extension. When you compose a post on X or Threads, it captures the text and automatically submits it to the other platform in the background, simulating your own actions.",
+      "Yeet is a Chrome extension that runs in your browser. When you post on X or Threads, it captures the text (and images, if Copy Images is on), opens a background tab on the other platform, fills the composer, and posts for you using the session you’re already logged into.",
   },
   {
     question: "Do I need to give you my passwords?",
     answer:
-      "No! Since Yeet is a browser extension, it securely uses your existing logged-in sessions on X and Threads. We never see your passwords or store your login tokens.",
+      "No. Yeet uses your existing logged-in sessions on X and Threads. We never see your passwords or store your login tokens.",
   },
   {
     question: "Are my posts stored on your servers?",
     answer:
-      "Not at all. We don't even have a database. Yeet operates 100% locally in your browser and communicates directly with the respective social media APIs.",
-  },
-  {
-    question: "Is this completely free?",
-    answer: "Yes, Yeet is currently completely free and 100% open-source.",
+      "No. There is no Yeet server and no database. Draft text and images stay in your browser’s extension storage only long enough to complete the cross-post, then they’re cleared.",
   },
 ];
 

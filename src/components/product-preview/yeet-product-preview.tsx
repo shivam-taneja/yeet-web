@@ -55,12 +55,12 @@ export function YeetProductPreview() {
             <h2 className="max-w-3xl font-display text-4xl font-extrabold leading-none md:text-6xl">
               One quick peek.
               <br />
-              Everything’s handled.
+              Text and images, handled.
             </h2>
           </div>
           <p className="max-w-sm text-base leading-relaxed text-ink/65">
-            See what’s connected, pause a direction, and check what landed —
-            without leaving the page you’re on.
+            Pause Yeet, check the last yeet, and keep posting — the other
+            timeline fills itself, photos included when Copy Images is on.
           </p>
         </div>
 

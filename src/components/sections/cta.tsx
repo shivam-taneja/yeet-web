@@ -18,8 +18,9 @@ export function Cta() {
         <h2 className="font-display font-extrabold text-4xl md:text-6xl tracking-tight leading-none mb-4">
           Stop double-typing.
         </h2>
-        <p className="text-lg text-cream/85 mb-8">
-          Install Yeet and let your posts fly themselves.
+        <p className="text-lg text-cream/85 mb-8 max-w-xl mx-auto">
+          Install Yeet free from the Chrome Web Store. Auto cross-post text and
+          images between X and Threads — open source on GitHub.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Link
@@ -28,7 +29,7 @@ export function Cta() {
             rel="noopener noreferrer"
             className="inline-block bg-cream text-ink px-9 py-4 rounded-full font-bold text-lg border-2 border-ink shadow-[5px_5px_0_var(--color-ink)] hover:translate-y-0.5 hover:shadow-[3px_3px_0_var(--color-ink)] transition"
           >
-            Get Yeet free
+            Get Yeet on Chrome
           </Link>
           <Link
             href={siteConfig.links.github}

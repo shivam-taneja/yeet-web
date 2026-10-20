@@ -29,7 +29,7 @@ export function Header() {
         <Link href="/">
           <Image
             src="/yeet-logo.png"
-            alt="Yeet"
+            alt="Yeet — auto cross-post between X and Threads"
             width={956}
             height={444}
             className="h-12 w-auto object-contain"
