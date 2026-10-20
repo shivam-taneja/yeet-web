@@ -7,6 +7,6 @@ export const siteConfig = {
     howItWorks: "/#how",
 
     privacy: "/privacy",
-    contact: "https://www.shivamtaneja.com/contact",
+    contact: "https://www.shivamtaneja.com/contact?source=yeet",
   },
 };

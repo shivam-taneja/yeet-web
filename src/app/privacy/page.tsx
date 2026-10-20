@@ -187,7 +187,7 @@ export default function PrivacyPage() {
               <p className="text-ink/80">
                 Questions about this policy:{" "}
                 <a
-                  href="https://www.shivamtaneja.com/contact"
+                  href="https://www.shivamtaneja.com/contact?source=yeet"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-coral hover:underline font-medium"
