@@ -1,7 +1,8 @@
 const CHROME_WEB_STORE_ID = "knbfidiiikhjebpijhafdikkjhbgbefe";
 const CHROME_WEB_STORE_BASE = `https://chromewebstore.google.com/detail/${CHROME_WEB_STORE_ID}`;
 
-const EDGE_ADDONS_BASE = CHROME_WEB_STORE_BASE; // TODO: Edge Add-ons URL
+const EDGE_ADDONS_BASE =
+  "https://microsoftedge.microsoft.com/addons/detail/yeet/iaiackoabgikdcniiclhbflcnjfhnand";
 const FIREFOX_ADDONS_BASE =
   "https://addons.mozilla.org/en-US/firefox/addon/get-yeet/";
 
