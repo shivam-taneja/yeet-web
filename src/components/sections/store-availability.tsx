@@ -28,7 +28,7 @@ export function StoreAvailability({
       </span>
       {stores.map((store, i) => (
         <span key={store.name}>
-          {i > 0 && <span className={`mx-2 ${sep}`}>·</span>}
+          {i > 0 && <span className={`mx-2 ${sep}`}>•</span>}
           <Link
             href={store.href}
             target="_blank"

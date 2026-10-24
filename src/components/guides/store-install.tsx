@@ -8,11 +8,7 @@ const stores = [
   siteConfig.stores.firefox,
 ];
 
-const tones = [
-  "bg-ink text-cream",
-  "bg-cream text-ink",
-  "bg-butter text-ink",
-];
+const tones = ["bg-ink text-cream", "bg-cream text-ink", "bg-butter text-ink"];
 
 export function StoreButtons() {
   return (
@@ -63,7 +59,7 @@ export function StoreInstall() {
         >
           Read the privacy policy
         </Link>
-        {" · "}
+        {" • "}
         <Link
           href={siteConfig.links.github}
           target="_blank"

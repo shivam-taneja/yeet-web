@@ -182,7 +182,7 @@ export function YeetProductPreview() {
                             {item.text}
                           </p>
                           <p className="mt-1 text-[11px] font-medium text-ink/45">
-                            Landed · {item.time}
+                            Landed • {item.time}
                           </p>
                         </div>
                       </div>

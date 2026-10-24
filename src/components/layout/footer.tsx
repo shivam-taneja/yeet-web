@@ -18,7 +18,7 @@ export function Footer() {
             loading="lazy"
             className="h-9 w-auto object-contain"
           />
-          <p className="text-sm text-ink/50">© 2026 Yeet · posts, yeeted.</p>
+          <p className="text-sm text-ink/50">© 2026 Yeet • posts, yeeted.</p>
           <div className="flex gap-6 items-center text-sm font-medium">
             <GetYeetLink className="hover:text-coral transition-colors">
               Get Yeet
