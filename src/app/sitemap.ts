@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { siteUrl } from "@/config/seo";
+import { guides } from "@/config/guides";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -9,6 +10,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
+    ...guides.map((guide) => ({
+      url: `${siteUrl}${guide.href}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     {
       url: `${siteUrl}/privacy`,
       lastModified: new Date(),

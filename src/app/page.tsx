@@ -5,6 +5,7 @@ import { Hero } from "@/components/sections/hero";
 import { Demo } from "@/components/sections/demo";
 import { Screenshots } from "@/components/sections/screenshots";
 import { HowItWorks } from "@/components/sections/how-it-works";
+import { Guides } from "@/components/sections/guides";
 import { Cta } from "@/components/sections/cta";
 import { Faq } from "@/components/sections/faq";
 import { YeetProductPreview } from "@/components/product-preview/yeet-product-preview";
@@ -18,6 +19,7 @@ export default function Home() {
       <Screenshots />
       <YeetProductPreview />
       <HowItWorks />
+      <Guides />
       <Faq />
       <Cta />
       <Footer />
