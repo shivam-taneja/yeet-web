@@ -44,6 +44,9 @@ export function Header() {
           >
             How it works
           </Link>
+          <Link href="/#guides" className="hover:text-coral transition-colors">
+            Guides
+          </Link>
         </nav>
         <div className="flex items-center gap-4">
           <Link
