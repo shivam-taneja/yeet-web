@@ -1,10 +1,13 @@
 # yeet-web
 
-The Next.js marketing website for [yeet](https://github.com/shivam-taneja/yeet) — a free, open-source Chrome extension that auto cross-posts **text and images** between X (Twitter) and Threads.
+The Next.js marketing website for [yeet](https://github.com/shivam-taneja/yeet) — a free, open-source browser extension that auto cross-posts **text and images** between X (Twitter) and Threads.
 
 Live at [yeet.shivamtaneja.com](https://yeet.shivamtaneja.com)
 
-**Install the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/knbfidiiikhjebpijhafdikkjhbgbefe?utm_source=item-share-cb).**
+**Install:**
+- [Chrome Web Store](https://chromewebstore.google.com/detail/knbfidiiikhjebpijhafdikkjhbgbefe)
+- [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/yeet/iaiackoabgikdcniiclhbflcnjfhnand)
+- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/get-yeet/)
 
 ## Demo
 
